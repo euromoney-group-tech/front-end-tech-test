@@ -10,36 +10,44 @@ Create an app that displays all the information in the pilots.json file (it can 
 
 **Listing Page**
 
-The page should display a grid with the following columns:
-Id - sortable
-Callsign - sortable
-Plane - sortable
-Image Url
-Action
-The action column should needs to have 2 actions:
+* The page should display a grid with the following columns:
+  * Id - sortable
+  * Callsign - sortable
+  * Plane - sortable
+  * Image Url
+  * Action
 
-Show – button that shows the pilot details in another route;
-Delete – button that removes the pilot from the list
-A label on the page displays the number of items displayed in the list
-The users should only be fetched once when the app starts, after which they are loaded from memory. A real backend (not the .json file) should be able to be easily substituted in the future.
+* The action column should have 2 actions:
+  * Show – button that shows the pilot details in another route;
+  * Delete – button that removes the pilot from the list
+  
+* A label on the page displays the number of items displayed in the list. The users should only be fetched once when the app starts, after which they are loaded from memory. A real backend (not the .json file) should be able to be easily substituted in the future.
 
 **Details Page**
 
 The details page should show the following information:
-Id
-Callsign
-Plane
-Image
-A "back" button to return to the listing page
+* Id
+* Callsign
+* Plane
+* Image
+* A "back" button to return to the listing page
 
 
 **Considerations**
-A few points you might wan to consider:
 
-Tests
-Responsive behaviour
-Code extensibility
-Examples
+A few points you might want to consider:
+
+* Tests
+* Responsive behaviour
+* Code extensibility
+
+**Submissions**
+Submit your code by creating a pull request on this repository
+
+**Examples**
+
 Use the wireframes below as a guide, the app is not required to look like this.
 
+![tech-test-1](tech-test1.png)
 
+![tech-test-2](tech-test2.png)
