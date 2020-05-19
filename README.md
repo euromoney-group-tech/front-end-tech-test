@@ -2,9 +2,9 @@
 
 ### Overview
 
-You are required to create a simple app which shows information about "Euromoney Top Guns", the MVP requirements are listed below. Additional features are planned for the future so structure the application in such a way that it can be easily extended and the existing code reused.
+You are required to create a simple app which shows information about "Top Guns", the MVP requirements are listed below. Additional features are planned for the future so structure the application in such a way that it can be easily extended and the existing code reused.
 
-The code must be written in Angular (not AngularJS), React or VueJS (Typescript is optional but preferred). Feel free to use any NPM libraries you like.
+The code must be written in Angular (not AngularJS), React or VueJS (Typescript is optional). Feel free to use any NPM libraries you like.
 
 ### Requirements
 
