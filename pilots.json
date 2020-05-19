@@ -1,0 +1,36 @@
+[{
+	"Id": 1,
+	"Callsign": "Maverick",
+	"Plane": "F18",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/e/e7/Maverick_sequel.jpg"
+}, {
+	"Id": 2,
+	"Callsign": "Iceman",
+	"Plane": "MiG-28",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/b/b3/Iceman.jpg"
+}, {
+	"Id": 3,
+	"Callsign": "Goose",
+	"Plane": "Tiger II",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/5/5e/Goose.jpg"
+}, {
+	"Id": 4,
+	"Callsign": "Jester",
+	"Plane": "Northrop F-5E",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/1/1b/Jester.jpg"
+}, {
+	"Id": 5,
+	"Callsign": "Merlin",
+	"Plane": "F-14A Tomcat",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/9/9d/Merlin.jpg"
+}, {
+	"Id": 6,
+	"Callsign": "Cougar",
+	"Plane": "F18",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/a/a6/Screenshot_00002.jpg"
+}, {
+	"Id": 7,
+	"Callsign": "Viper",
+	"Plane": "F-14A Tomcat",
+	"ImageUrl": "https://vignette.wikia.nocookie.net/topgun/images/d/d6/Screen_Shot_2012-03-29_at_2.39.53_PM.png"
+}]
