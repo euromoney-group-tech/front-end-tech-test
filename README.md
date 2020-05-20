@@ -50,6 +50,6 @@ Submit your code by creating a pull request on this repository
 
 Use the wireframes below as a guide, the app is not required to look like this.
 
-![tech-test-1](tech-test1.png)
+![wireframe-1](wireframe-1.png)
 
-![tech-test-2](tech-test2.png)
+![wireframe-2](wireframe-2.png)
