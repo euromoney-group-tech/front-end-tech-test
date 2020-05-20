@@ -37,7 +37,7 @@ The details page should show the following information:
 
 ### Considerations
 
-A few points you might want to consider:
+A few things you might want to consider:
 
 * Tests
 * Responsive behaviour
