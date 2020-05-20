@@ -1,5 +1,5 @@
 {
-  "name": "sf_euromoney_test",
+  "name": "front-end-tech-test",
   "version": "0.0.1",
   "description": "submission to Euromoney front_end_tech_test",
   "engines": {
@@ -12,7 +12,7 @@
   "author": "stephen.d.francis@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:euromoney-group-tech/front-end-tech-test.git"
+    "url": "git@github.com:stephenfrancis/front-end-tech-test.git"
   },
   "license": "ISC",
   "sideEffects": false,
