@@ -22,7 +22,7 @@ Create an app that displays all the information in the pilots.json file (it can 
 * The action column should have 2 actions:
   * Show – button that shows the pilot details in another route;
   * Delete – button that removes the pilot from the list
-  
+
 * A label on the page displays the number of items displayed in the list. The users should only be fetched once when the app starts, after which they are loaded from memory. A real backend (not the .json file) should be able to be easily substituted in the future.
 
 **Details Page**
@@ -53,3 +53,12 @@ Use the wireframes below as a guide, the app is not required to look like this.
 ![wireframe-1](wireframe-1.png)
 
 ![wireframe-2](wireframe-2.png)
+
+
+## Candidate Notes
+
+* To run: `npm install` followed by `npm run build`
+* Didn't have time to write tests - intention was to use Jest
+* Didn't have time to apply better styling or responsiveness with CSS
+* Delete function does not currently trigger re-render owing to props not changing
+*
