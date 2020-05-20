@@ -16,7 +16,7 @@ Create an app that displays all the information in the pilots.json file (it can 
   * Id - sortable
   * Callsign - sortable
   * Plane - sortable
-  * Image Url
+  * Image
   * Action
 
 * The action column should have 2 actions:
