@@ -28,6 +28,7 @@ If it was calling to an API I'd probably reconsider this.
 
 I chose to use the relatively new Recoil library to handle the state management.
 This was mainly down to wanting something lightweight, and rapid to develop with.
+I'm not hugely happy with the state management aspect, because it feels open to unpredictable side-effects if the application were bigger.
 
 ### Styling
 
