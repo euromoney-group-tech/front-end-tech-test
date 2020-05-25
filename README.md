@@ -12,38 +12,41 @@ Create an app that displays all the information in the pilots.json file (it can 
 
 **Listing Page**
 
-* The page should display a grid with the following columns:
-  * Id - sortable
-  * Callsign - sortable
-  * Plane - sortable
-  * Image
-  * Action
+- The page should display a grid with the following columns:
 
-* The action column should have 2 actions:
-  * Show – button that shows the pilot details in another route;
-  * Delete – button that removes the pilot from the list
-  
-* A label on the page displays the number of items displayed in the list. The users should only be fetched once when the app starts, after which they are loaded from memory. A real backend (not the .json file) should be able to be easily substituted in the future.
+  - Id - sortable
+  - Callsign - sortable
+  - Plane - sortable
+  - Image
+  - Action
+
+- The action column should have 2 actions:
+
+  - Show – button that shows the pilot details in another route;
+  - Delete – button that removes the pilot from the list
+
+- A label on the page displays the number of items displayed in the list. The users should only be fetched once when the app starts, after which they are loaded from memory. A real backend (not the .json file) should be able to be easily substituted in the future.
 
 **Details Page**
 
 The details page should show the following information:
-* Id
-* Callsign
-* Plane
-* Image
-* A "back" button to return to the listing page
 
+- Id
+- Callsign
+- Plane
+- Image
+- A "back" button to return to the listing page
 
 ### Considerations
 
 A few things you might want to consider:
 
-* Tests
-* Responsive behaviour
-* Code extensibility
+- Tests
+- Responsive behaviour
+- Code extensibility
 
 ### Submissions
+
 Submit your code by creating a pull request on this repository
 
 ### Examples
@@ -53,3 +56,9 @@ Use the wireframes below as a guide, the app is not required to look like this.
 ![wireframe-1](wireframe-1.png)
 
 ![wireframe-2](wireframe-2.png)
+
+## Notes
+
+- To run: `yarn` followed by `yarn start`
+- I used Material to get a quick start for styling purposes.
+- No tests, but I would have used Jest, there was not enough time for me to write some snapshot and unit tests
