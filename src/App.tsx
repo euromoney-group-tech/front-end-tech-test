@@ -6,44 +6,51 @@ import {
   Switch,
   Route,
   Link,
-  useParams
+  useParams,
+  useRouteMatch
 } from "react-router-dom";
 import Detail from "./Detail";
 import List from "./List";
-import Pilot from "./Pilot";
+import { Pilots } from "./Pilot";
 import data from "./data/pilots.json";
 
-interface Props {
-  data: Pilot[];
-  pilots: { [key: string]: Pilot };
-}
+interface Props {}
 
-const pilots = {};
+
+const orig_pilots: Pilots = {} as Pilots;
 data.forEach(pilot => {
-  pilots[String(pilot.Id)] = pilot;
+  orig_pilots[String(pilot.Id)] = pilot;
 });
 
-const deleter = (pilot_id: string) => {
-  const index = data.reduce((prev: number, curr, index) => {
-    return prev || (String(curr.Id) === pilot_id) ? index : null;
-  }, null);
-  if (typeof index === "number") {
-    data.splice(index, 1);
-  }
-  delete pilots[pilot_id];
-};
 
 const App: React.SFC<Props> = (props) => {
   console.log(`inside App with ${data.length} data items`);
+  const [ pilots, setPilots ] = React.useState<Pilots>(orig_pilots);
+
+  const deleter = (pilot_id: string) => {
+    // delete pilots[pilot_id];
+    const new_pilots = {} as Pilots;
+    Object.keys(pilots)
+      .forEach((iter_pilot_id) => {
+        if (iter_pilot_id !== pilot_id) {
+          new_pilots[iter_pilot_id] = pilots[iter_pilot_id];
+        }
+      });
+    setPilots(new_pilots);
+  };
+
+  const DetailRouting = () => {
+    return <Detail pilot={pilots[useParams().pilotId]} />
+  };
 
   return (
     <Router>
       <Switch>
         <Route path="/list/:sortOrder">
-          <List pilots={props.data} deleter={deleter} />
+          <List pilots={pilots} deleter={deleter} />
         </Route>
         <Route path="/detail/:pilotId">
-          <Detail pilots={props.pilots} />
+          <DetailRouting />
         </Route>
         <Route path="/">
           <Link to="/list/id">Enter</Link>
@@ -54,4 +61,4 @@ const App: React.SFC<Props> = (props) => {
 }
 
 const target = document.querySelector("#app");
-ReactDOM.render(<App data={data} pilots={pilots} />, target);
+ReactDOM.render(<App />, target);

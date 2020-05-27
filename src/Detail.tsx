@@ -1,22 +1,14 @@
 
 import * as React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams
-} from "react-router-dom";
-import Pilot from "./Pilot";
+import { Link } from "react-router-dom";
+import { Pilot } from "./Pilot";
 
 interface Props {
-  pilots: { [key: string]: Pilot };
+  pilot: Pilot;
 }
 
 const Detail: React.SFC<Props> = (props) => {
-  const pilot = props.pilots[useParams().pilotId];
-  console.log(`pilot: ${JSON.stringify(pilot)}`);
-
+  const pilot = props.pilot;
   return (
     <div className="detail">
       <div>Pilot Detail</div>

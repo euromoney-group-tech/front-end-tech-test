@@ -6,8 +6,18 @@
     "node": "^10.17"
   },
   "main": "build/server/local.js",
+  "jest": {
+    "preset": "ts-jest",
+    "testRegex": "__tests__/.*\\.(ts|tsx)$",
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "src/tsconfig.json"
+      }
+    }
+  },
   "scripts": {
-    "build": "npx parcel src/public/index.html"
+    "build": "npx parcel src/public/index.html",
+    "test": "npx jest"
   },
   "author": "stephen.d.francis@gmail.com",
   "repository": {

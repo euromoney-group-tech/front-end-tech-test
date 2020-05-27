@@ -8,11 +8,11 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import Pilot from "./Pilot";
+import { deletePilot, Pilot, Pilots } from "./Pilot";
 
 interface Props {
-  deleter: (pilot_id: string) => void;
-  pilots: Pilot[];
+  deleter: deletePilot;
+  pilots: Pilots;
 }
 
 const sortFunction = {
@@ -29,8 +29,8 @@ const sortFunction = {
 
 const List: React.SFC<Props> = (props) => {
   const sort_order = useParams().sortOrder;
-  const children: JSX.Element[] = props.pilots
-    .slice() // clone array
+  const children: JSX.Element[] = Object.keys(props.pilots)
+    .map(pilot_id => props.pilots[pilot_id])
     .sort(sortFunction[sort_order])
     .map((pilot: Pilot) => {
       const deleter = () => {
@@ -61,7 +61,7 @@ const List: React.SFC<Props> = (props) => {
         {children}
       </div>
       <div>
-        {props.pilots.length} items in the list
+        {Object.keys(props.pilots).length} items in the list
       </div>
     </div>
   );
